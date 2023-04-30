@@ -22,4 +22,5 @@ def contact():
 def projects():
     return flask.render_template('projects.html')
 
-app.run()
+if __name__ == '__main__': # if we're running this app from the command line
+    app.run(debug=True)
